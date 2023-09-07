@@ -1,0 +1,20 @@
+{
+  "name": "yarn-plugin-dev-portal",
+  "version": "1.0.0",
+  "main": "./sources/index.js",
+  "repository": "https://codeberg.org/devthefuture/yarn-plugin-dev-portal.git",
+  "homepage": "https://codeberg.org/devthefuture/yarn-plugin-dev-portal/",
+  "author": "devthejo <devthejo@protonmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "builder build plugin"
+  },
+  "packageManager": "yarn@3.6.3",
+  "dependencies": {
+    "@yarnpkg/builder": "^4.0.0-rc.50",
+    "@yarnpkg/cli": "^4.0.0-rc.50",
+    "@yarnpkg/core": "^4.0.0-rc.50",
+    "@yarnpkg/parsers": "^3.0.0-rc.50",
+    "clipanion": "^4.0.0-rc.2"
+  }
+}
