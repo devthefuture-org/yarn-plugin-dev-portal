@@ -25,6 +25,9 @@ module.exports = {
       if (process.env.INSIDE_YARN_DEV_PORTAL === "true") {
         return;
       }
+      if(!fs.existsSync(path.join(cwd, "package.json.prod"))){
+        return
+      }
       syncEnvs(null);
     },
   },
