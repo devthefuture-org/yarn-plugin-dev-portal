@@ -22,6 +22,9 @@ module.exports = function resolvePortalPackages(portalRoot) {
 
   for (let pkg of packages) {
     const pkgPath = path.join(portalRoot, pkg);
+    if (pkg.startsWith(".")) {
+      continue
+    }
     if (pkg.startsWith("@")) {
       const scopedPackages = fs.readdirSync(pkgPath);
       for (let scopedPkg of scopedPackages) {
